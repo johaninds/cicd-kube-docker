@@ -92,7 +92,7 @@ pipeline {
         }
 
         stage('Remove Unused docker image') {
-            steps{
+            steps {
                 sh "docker rmi $registry:$VBUILD_NUMBER"
             }
         }
